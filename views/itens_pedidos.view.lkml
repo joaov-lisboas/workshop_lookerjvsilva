@@ -12,21 +12,26 @@ view: itens_pedidos {
     # This dimension will be called "Item Pedido ID" in Explore.
 
   dimension: item_pedido_id {
+    label: "ID"
+    primary_key: yes
     type: number
     sql: ${TABLE}.item_pedido_id ;;
   }
 
   dimension: item_pedido_pedido_id {
+    hidden: yes
     type: number
     sql: ${TABLE}.item_pedido_pedido_id ;;
   }
 
   dimension: item_pedido_produto_id {
+    hidden: yes
     type: number
     sql: ${TABLE}.item_pedido_produto_id ;;
   }
 
   dimension: item_pedido_produto_preco {
+    hidden: yes
     type: number
     sql: ${TABLE}.item_pedido_produto_preco ;;
   }

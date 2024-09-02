@@ -9,6 +9,7 @@ view: produtos {
   # You need to define a primary key in a view in order to join to other views.
 
   dimension: produto_id {
+    label: "ID"
     primary_key: yes
     type: number
     sql: ${TABLE}.produto_id ;;
@@ -18,21 +19,25 @@ view: produtos {
     # This dimension will be called "Produto Categoria" in Explore.
 
   dimension: produto_categoria {
+    label: "Categoria"
     type: string
     sql: ${TABLE}.produto_categoria ;;
   }
 
   dimension: produto_descricao {
+    label: "Descrição"
     type: string
     sql: ${TABLE}.produto_descricao ;;
   }
 
   dimension: produto_nome {
+    label: "Nome"
     type: string
     sql: ${TABLE}.produto_nome ;;
   }
 
   dimension: produto_preco {
+    hidden: yes
     type: number
     sql: ${TABLE}.produto_preco ;;
   }

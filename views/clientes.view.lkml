@@ -12,46 +12,56 @@ view: clientes {
     # This dimension will be called "Cliente Cep" in Explore.
 
   dimension: cliente_cep {
+    label: "CEP"
     type: string
     sql: ${TABLE}.cliente_cep ;;
   }
 
   dimension: cliente_cidade {
+    label: "Cidade"
     type: string
     sql: ${TABLE}.cliente_cidade ;;
   }
 
   dimension: cliente_cpf {
+    label: "CPF"
+    primary_key: yes
     type: string
     sql: ${TABLE}.cliente_cpf ;;
   }
 
   dimension: cliente_email {
+    label: "E-mail"
     type: string
     sql: ${TABLE}.cliente_email ;;
   }
 
   dimension: cliente_endereco {
+    label: "Endereço"
     type: string
     sql: ${TABLE}.cliente_endereco ;;
   }
 
   dimension: cliente_estado {
+    label: "Estado"
     type: string
     sql: ${TABLE}.cliente_estado ;;
   }
 
   dimension: cliente_nome {
+    label: "Nome"
     type: string
     sql: ${TABLE}.cliente_nome ;;
   }
 
   dimension: cliente_pais {
+    label: "País"
     type: string
     sql: ${TABLE}.cliente_pais ;;
   }
 
   dimension: cliente_telefone {
+    label: "Telefone"
     type: string
     sql: ${TABLE}.cliente_telefone ;;
   }
